@@ -1,0 +1,22 @@
+// GRADIENTS
+
+$gradient: linear-gradient(to right, #7f7fd5, #91eae4);
+
+// COLORS
+
+$shadow: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+$category: rgb(144, 238, 144);
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $gradient;
+  height: 100%;
+}

@@ -1,0 +1,70 @@
+@use "./custom" as *;
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  padding: 2rem;
+  background-color: $white;
+  border-radius: 2rem;
+  box-shadow: rgba($shadow, 0.4) 0rem 1rem 2rem;
+  width: 50rem;
+  height: auto;
+  overflow-wrap: break-word;
+  font-family: "Mulish", sans-serif;
+
+  &__title {
+    font-size: 2.5rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+  &__description {
+    font-size: 2rem;
+    padding: 2rem 0rem 2rem 0rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__category {
+    font-size: 1.75rem;
+    color: $shadow;
+    background-color: rgba($category, 0.3);
+    border: 1px solid $category;
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: flex-end;
+
+    &-btn {
+      border: none;
+      border-radius: 3rem;
+      padding: 1.3rem;
+      cursor: pointer;
+      background-color: rgba($shadow, 0.8);
+      box-shadow: rgba($shadow, 0.4) 0rem 0.6rem 1rem;
+      transition: all 0.3s;
+      font-family: "Mulish", sans-serif;
+      font-size: 1.65rem;
+      text-decoration: none;
+      color: $white;
+
+      &:hover {
+        box-shadow: rgba($shadow, 0.4) 0rem 1.5rem 1.5rem -0.5rem;
+        transform: scale(1.05);
+      }
+      &:active {
+        box-shadow: rgba($shadow, 0.3);
+        transform: scale(0.98);
+      }
+    }
+  }
+}

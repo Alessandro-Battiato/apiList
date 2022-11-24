@@ -1,0 +1,45 @@
+@use "./custom" as *;
+
+.inner-form {
+  display: flex;
+  margin: 5rem;
+  justify-content: center;
+}
+
+.input {
+  padding: 1.5rem;
+  outline: none;
+  height: 4rem;
+  min-width: 20%;
+  box-shadow: rgba($shadow, 0.24) 0rem 0.4rem 1rem;
+
+  border: none;
+  border-radius: 3rem;
+}
+
+.input::placeholder {
+  font-family: "Mulish", sans-serif;
+  font-size: 1.5rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 2rem;
+  min-width: 7rem;
+  transform: translateX(1rem);
+  cursor: pointer;
+  background-color: $white;
+  box-shadow: rgba($shadow, 0.4) 0rem 0.3rem 0.8rem;
+  transition: all 0.3s;
+  font-family: "Mulish", sans-serif;
+  outline: none;
+
+  &:hover {
+    box-shadow: rgba($shadow, 0.3) 0rem 1rem 2rem -0.5rem;
+    transform: translateX(1rem) scale(1.05);
+  }
+  &:active {
+    box-shadow: rgba($shadow, 0.3);
+    transform: translateX(1rem) scale(0.98);
+  }
+}
